@@ -28,3 +28,30 @@ A machine learning-based solution to detect formaldehyde adulteration in fruits 
 ```bash
 git clone [your-repository-link]
 cd fruit-adulteration-detection
+Install dependencies:
+
+bash:
+pip install pandas scikit-learn imbalanced-learn joblib numpy opencv-python Pillow
+Usage
+GUI Mode:
+
+bash:
+python gui.py
+Use the dropdown to select fruit type
+
+Enter formaldehyde content in ppm
+
+Click "Predict" to get safety result
+
+Model Training:
+bash
+python model.py
+Trains both SVM and KNN models
+
+Saves models to Project_Saved_Models/
+
+Command Line Prediction:
+
+bash
+python predict.py
+Follow prompts to enter fruit type (1=Apple, 2=Orange) and ppm value
